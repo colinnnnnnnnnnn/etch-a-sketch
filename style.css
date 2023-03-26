@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 
 body {
     background-color: rgb(119, 119, 119);
     padding: 10px;
+}
+
+#title {
+    font-family: 'Rubik Mono One', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 100px;
 }
 
 .container {
@@ -45,4 +54,8 @@ button {
     padding: 10px;
     border-radius: 10px;
     background-color: rgb(198, 211, 223);
+}
+
+input {
+    width: 300px;
 }

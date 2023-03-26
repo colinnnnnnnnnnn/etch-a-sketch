@@ -1,9 +1,23 @@
 let rows = [];
 let blocks = [];
+
 const column = document.querySelector('.column');
 const width = document.getElementById('width');
 const height = document.getElementById('height');
 const button = document.querySelector('.button');
+const widthText = document.querySelector('.widthText');
+const heightText = document.querySelector('.heightText');
+widthText.textContent = width.value;
+heightText.textContent = height.value;
+
+width.oninput = () => {
+    widthText.textContent = width.value;
+}
+
+height.oninput = () => {
+    heightText.textContent = height.value;
+}
+
 
 let n = height.value;
 let m = width.value;
@@ -20,7 +34,7 @@ function generate() {
             let cover = rows[i].appendChild(document.createElement('div'));
             let block = cover.appendChild(document.createElement('div'));
             block.setAttribute('class', 'block');
-            block.setAttribute('style', 'padding: ' + (300/m) + 'px;');
+            block.setAttribute('style', 'padding: ' + (400/m) + 'px;');
             
             blocks.push(cover);
         }
