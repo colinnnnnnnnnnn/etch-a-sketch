@@ -1,9 +1,11 @@
 let rows = [];
 let blocks = [];
 const column = document.querySelector('.column');
+const width = document.getElementById('width');
+const height = document.getElementById('height');
 
-let n = 10;
-let m = 10;
+let n = 16;
+let m = 16;
 
 column.setAttribute('style', 'gap: ' + (100/m) + 'px;');
 

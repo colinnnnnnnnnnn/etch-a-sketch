@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
     background-color: rgb(119, 119, 119);
+    padding: 10px;
 }
 
 .container {
     display: flex;
     justify-content: center;
+    gap: 75px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .column {
@@ -20,4 +32,17 @@ body {
 
 .block {
     background-color: rgb(255, 255, 255);
+}
+
+#text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(198, 211, 223);
 }
