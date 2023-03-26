@@ -5,7 +5,6 @@ body {
 .container {
     display: flex;
     justify-content: center;
-
 }
 
 .column {
@@ -20,5 +19,5 @@ body {
 }
 
 .block {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
