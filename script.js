@@ -30,9 +30,14 @@ for (let i = 0; i < blocks.length; i++) {
 
 for (let i = 0; i < blocks.length; i++) {
     blocks[i].addEventListener('mouseover', () => {
+
+        let randomColor = Math.floor(Math.random()*16777215).toString(16);
+
+        let child = blocks[i].firstElementChild;
         if (brightness[i] != 0) {
             brightness[i] -= 10;
             blocks[i].setAttribute('style', 'filter: brightness(' + brightness[i] + '%);');    
+            child.style.backgroundColor = `#${randomColor}`;
         }
     });
 }
